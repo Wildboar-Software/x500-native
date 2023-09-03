@@ -1,9 +1,9 @@
 {
-  "name": "@napi-rs/package-template",
+  "name": "@wildboar/x500-native",
   "version": "1.0.0",
-  "description": "Template project for writing node package with napi-rs",
+  "description": "NodeJS native add-ons for X.500 directory usage",
   "main": "index.js",
-  "repository": "git@github.com:napi-rs/package-template.git",
+  "repository": "https://github.com/Wildboar-Software/x500-native.git",
   "license": "MIT",
   "keywords": [
     "napi-rs",
@@ -18,7 +18,7 @@
     "index.js"
   ],
   "napi": {
-    "name": "package-template",
+    "name": "x500-native",
     "triples": {
       "defaults": true,
       "additional": [

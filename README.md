@@ -1,41 +1,13 @@
-# `@napi-rs/package-template`
+# NodeJS native add-ons for X.500 directory
 
-![https://github.com/napi-rs/package-template/actions](https://github.com/napi-rs/package-template/workflows/CI/badge.svg)
+![https://github.com/Wildboar-Software/x500-native/actions](https://github.com/Wildboar-Software/x500-native/workflows/CI/badge.svg)
 
-> Template project for writing node packages with napi-rs.
+This library contains functions for accelerating X.500 directory system agents
+(DSAs) and directory user agents (DUAs) written in NodeJS with native add-ons.
 
-# Usage
+# Installation
 
-1. Click **Use this template**.
-2. **Clone** your project.
-3. Run `yarn install` to install dependencies.
-4. Run `npx napi rename -n [name]` command under the project folder to rename your package.
-
-## Install this test package
-
-```
-yarn add @napi-rs/package-template
-```
-
-## Support matrix
-
-### Operating Systems
-
-|                  | node14 | node16 | node18 |
-| ---------------- | ------ | ------ | ------ |
-| Windows x64      | ✓      | ✓      | ✓      |
-| Windows x32      | ✓      | ✓      | ✓      |
-| Windows arm64    | ✓      | ✓      | ✓      |
-| macOS x64        | ✓      | ✓      | ✓      |
-| macOS arm64      | ✓      | ✓      | ✓      |
-| Linux x64 gnu    | ✓      | ✓      | ✓      |
-| Linux x64 musl   | ✓      | ✓      | ✓      |
-| Linux arm gnu    | ✓      | ✓      | ✓      |
-| Linux arm64 gnu  | ✓      | ✓      | ✓      |
-| Linux arm64 musl | ✓      | ✓      | ✓      |
-| Android arm64    | ✓      | ✓      | ✓      |
-| Android armv7    | ✓      | ✓      | ✓      |
-| FreeBSD x64      | ✓      | ✓      | ✓      |
+1. Run `yarn install` to install dependencies.
 
 ## Ability
 

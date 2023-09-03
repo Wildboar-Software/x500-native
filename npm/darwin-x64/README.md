@@ -1,3 +1,3 @@
-# `@napi-rs/package-template-darwin-x64`
+# `@wildboar/x500-native-darwin-x64`
 
-This is the **x86_64-apple-darwin** binary for `@napi-rs/package-template`
+This is the **x86_64-apple-darwin** binary for `@wildboar/x500-native`
