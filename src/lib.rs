@@ -2,6 +2,7 @@
 
 use napi_derive::napi;
 use napi::bindgen_prelude::*;
+use stringprep::x520prep;
 
 #[napi]
 fn oid_from_str(s: String) -> Option<Vec<u32>> {
@@ -42,3 +43,25 @@ fn oid_from_bytes(b: Uint8Array) -> Option<Vec<u32>> {
     }
     Some(nodes)
 }
+
+#[napi]
+fn prep_string (s: String, case_fold: bool) -> Option<String> {
+    match x520prep(&s, case_fold) {
+        Ok(p) => Some(s.to_owned()),
+        Err(_) => None,
+    }
+}
+
+// #[napi]
+// fn x520_prep_string_compare (a: &str, b: &str, ignore_case: bool) -> bool {
+//     // Waiting for the prepstring package to accept PR.
+//     let prepped_a = x520prep(a);
+//     let prepped_b = x520prep(b, case_fold);
+// }
+
+// TODO: Native Teletex transcoding
+// TODO: Native Hashmap / Hashset
+// TODO: caseIgnoreMatch
+// TODO: caseExactMatch
+// TODO: numericStringMatch
+// TODO: prepString
